@@ -1,0 +1,130 @@
+{% extends 'mainapp/basic.html' %}
+{% load static %}
+{% block title %}
+About Us
+{% endblock %}
+{% block css %}
+{% endblock %}
+{% block body %}
+<style>
+    .bgcol {
+        background: #1325e8;
+        height: 300px;
+    }
+    
+    .testimg {
+        width: 15%;
+        height: 20%;
+        border-radius: 50%;
+    }
+
+    .card {
+        box-shadow: 10px 10px 26px -15px  rgba (0, 0, 0, 0.75)
+    }
+
+    .card-body {
+        height: 350px;
+        
+    }
+</style>
+<section class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 bgcol p-5">
+                <div class="content text-right">
+                    <h1 class="display-4 text-white">
+                        StockHawk
+                    </h1>
+                    <span class="pl-5 text-white">"Stay on top of your investments with ease: Track your stocks, your
+                        way."</span>
+                </div>
+            </div>
+            <div class="col-md-6 p-5">
+                <h2>About Us</h2>
+                <p class="main"> StockHawk is a real-time stock tracker app that allows users to track the latest
+                    data on Nifty 50 stocks using Django and Celery. The app uses the Yahoo Finance API to retrieve
+                    real-time stock prices, as well as other important metrics such as change and percent change. Users
+                    can select from a range of Nifty 50 stocks and view their real-time data in an easy-to-use
+                    interface. The app is designed to provide a convenient and efficient way for users to stay informed
+                    about the latest market trends and make informed investment decisions
+                </p>
+                <btn class="btn btn-large btn-primary">
+                    <a href="/contact" style="text-decoration: none; color: inherit;">
+                        Contact Us
+                    </a>
+                </btn>
+            </div>
+        </div>
+        <div />
+</section>
+<section class="p-0 p-md-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4>Why StockHawk?</h4>
+                <p>The stock market is a complex and dynamic environment, with stock prices fluctuating constantly in
+                    response to market conditions and other factors. To succeed in this environment, it's essential to
+                    have access to real-time data on stock prices and other metrics. The real-time stock tracker app
+                    provides users with exactly that, offering a range of features designed to make it easy to track the
+                    latest data on Nifty 50 stocks..
+
+                    <i class="fas fa-arrow-down d-block pb-5 pt-3"></i>
+                    <img class="img-fluid d-none d-md-block" src="https://source.unsplash.com/1200x400/?team,stock,laptop">
+                    <img class="img-fluid d-block d-md-none" src="https://source.unsplash.com/600x400/?team,stock,laptop">
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="p- p-md-5">
+    <div class="container">
+        <div class="d-md-flex justify-content-space-between">
+            
+            <div class="flexitem p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <img src="../../static/mainapp/faq.png" class="testimg" alt="error">
+                            Why investing is Important?
+                        </h5>
+                        <hr>
+                        <p class="card-text">"Investment secures your financial future, with wise choices potentially leading to compounding interest and long-term wealth growth. It is a means to take control of your financial destiny."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flexitem p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <img src="../../static/mainapp/faq.png" class="testimg" alt="error">
+                            What are some common investment strategies for stocks?
+
+                        </h5>
+                        <hr>
+                        <p class="card-text">"Some common investment strategies for stocks include value investing, growth investing, income investing, and index investing. These strategies involve different approaches to selecting and managing investments based on specific goals and risk tolerance."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flexitem p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <img src="../../static/mainapp/faq.png" class="testimg" alt="error">
+                            At what age we should start investing in stocks?
+                            </h5>
+                        <hr>
+                        <p class="card-text">"There is no fixed age to start investing in stocks, but it is recommended to start as early as possible, preferably in your 20s, to reap the benefits of long-term growth and compounding interest."</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
+{% block js %}
+<script>
+</script>
+{% endblock %}
